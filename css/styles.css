@@ -1,0 +1,533 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* globals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+:root {
+  --main-color: #d3ad7f;
+  --dark-color: #13131a;
+  --bg-color: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.302);
+  font-size: 10px;
+}
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.align-content {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 116px;
+  background-color: var(--bg-color);
+  border-bottom: var(--border);
+}
+
+#header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* logo */
+
+#header-content #logo img {
+  width: 90%;
+}
+
+/* navbar */
+
+#header-content #navbar {
+  display: flex;
+  gap: 2rem;
+  transition: none !important;
+  z-index: 10;
+}
+
+#header-content #navbar a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+#header-content #navbar a:hover {
+  color: var(--main-color);
+}
+
+#header-content #navbar #close-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* icons */
+
+#header-content #icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#header-content #icons ion-icon {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+#header-content #icons ion-icon:hover {
+  color: var(--main-color);
+}
+
+#header-content #icons #menu-icon {
+  display: none;
+}
+
+/* search */
+
+#search {
+  position: absolute;
+  right: 50px;
+  top: 130px;
+  display: none;
+}
+
+#search.active {
+  display: block;
+}
+
+#search form input {
+  padding: 1rem;
+  min-width: 280px;
+  outline: none;
+}
+
+/* cart container */
+
+#cart-items-container {
+  background-color: #fafafa;
+  padding: 1rem;
+  height: 100vh;
+  position: fixed;
+  top: 116px;
+  right: -100%;
+  min-width: 280px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  transition: 0.3s;
+}
+#cart-items-container.active {
+  right: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cart-content {
+  text-align: center;
+}
+
+.cart-content img {
+  width: 70px;
+}
+
+.cart-content sub {
+  color: red;
+  text-decoration: line-through;
+}
+
+.cart-item ion-icon {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.cart-item ion-icon:hover {
+  color: red;
+}
+
+#cart-items-container .btn {
+  width: 100%;
+}
+
+/* home container */
+
+#home {
+  background-image: url('../images/home-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 116px);
+  display: flex;
+  align-items: center;
+}
+
+#home-content {
+  width: 520px;
+  color: #fff;
+}
+
+#home-content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 95%;
+}
+
+#home-content p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+/* section about */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+#about h2 span {
+  color: var(--main-color);
+}
+
+#about-content {
+  display: flex;
+}
+
+#about-content #about-image,
+#about-content #about-text {
+  width: 50%;
+}
+
+#about-content #about-image img {
+  width: 100%;
+}
+
+#about-content #about-text {
+  padding: 1.6rem;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#about-content #about-text h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+#about-content #about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+/* menu container */
+
+#menu h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+#menu h2 span {
+  color: var(--main-color);
+}
+
+#menu-content,
+#product-items,
+#review-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 2rem;
+}
+
+#menu-content .card-coffee,
+.review {
+  background-color: var(--dark-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.8rem;
+
+  width: 05%;
+  width: 380px;
+
+  border-radius: 0.7rem;
+  border: var(--border);
+}
+
+#menu-content .card-coffee:hover {
+  background-color: var(--main-color);
+}
+
+#menu-content .card-coffee:hover a {
+  background-color: var(--dark-color);
+}
+
+#menu-content .card-coffee img {
+  width: 50%;
+}
+
+#menu-content .card-coffee h3 {
+  font-size: 2rem;
+}
+
+#menu-content .card-coffee p {
+  font-size: 1.4rem;
+}
+
+#menu-content .card-coffee sub {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* products */
+
+#products,
+#reviews,
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#products h2,
+#reviews h2,
+#contact h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+#products h2 span,
+#contact h2 span {
+  color: var(--main-color);
+}
+
+#products .product-icons {
+  font-size: 2.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#products .product-icons ion-icon {
+  cursor: pointer;
+}
+
+#products .product-icons ion-icon:hover {
+  color: var(--main-color);
+}
+
+#products .product-icons #heart:hover {
+  color: red !important;
+}
+
+#products .product-icons #eye:hover {
+  color: #006eff !important;
+}
+
+#products .product-image img {
+  width: 280px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#products .product-price {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+#products .product-price h3 {
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+#products .product-price p {
+  font-weight: bold;
+}
+
+#products .product-price sub {
+  color: var(--main-color);
+  text-decoration: line-through;
+}
+
+/* reviews */
+
+#reviews #review-items .review {
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+  gap: 2rem;
+}
+
+#reviews #review-items .review:hover {
+  border-color: var(--main-color);
+}
+
+#reviews #review-items .review .person {
+  width: 96px;
+  border-radius: 50%;
+}
+
+/* contact */
+
+#contact {
+}
+
+#contact-items {
+  display: flex;
+  padding: 6rem 2rem;
+}
+
+#contact #contact-items #maps {
+  width: 50%;
+}
+#contact #contact-items #maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#contact #contact-items form {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 4rem;
+  flex: 1;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contact-items form .input-wrapper label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#contact-items form .input-wrapper input,
+.input-wrapper textarea {
+  color: #fff;
+  display: block;
+  padding: 1.4rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: var(--border);
+  border-radius: 0.5rem;
+}
+
+.input-wrapper textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 4rem 2.5rem;
+  margin-top: 5rem;
+}
+
+footer .align-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer #social {
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+footer p ion-icon {
+  color: red;
+}
+
+footer p a {
+  font-weight: bold;
+  color: var(--main-color);
+}

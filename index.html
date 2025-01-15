@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="shortcut icon" href="./images/menu-1.png" type="image/png" />
+    <title>Site Cafeteria</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section id="header-content" class="align-content">
+        <div id="logo">
+          <a href="#home">
+            <img src="./images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav id="navbar">
+          <ion-icon name="close" id="close-icon"></ion-icon>
+          <a href="#home">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#products">Produtos</a>
+          <a href="#reviews">Avaliações</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <div id="icons">
+          <ion-icon name="search-outline" id="search-icon"></ion-icon>
+          <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+          <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+        </div>
+        <div id="search">
+          <form>
+            <input type="text" placeholder="Pesquisar..." />
+          </form>
+        </div>
+        <div id="cart-items-container">
+          <div class="cart-item">
+            <div class="cart-content">
+              <img src="./images/menu-1.png" alt="coffee one" />
+              <h3>Café Lorem</h3>
+              <p>R$13.50 <sub>15.99</sub></p>
+            </div>
+            <ion-icon name="trash-outline"></ion-icon>
+          </div>
+          <div class="cart-item">
+            <div class="cart-content">
+              <img src="./images/menu-2.png" alt="coffee one" />
+              <h3>Café Lorem</h3>
+              <p>R$13.50 <sub>15.99</sub></p>
+            </div>
+            <ion-icon name="trash-outline"></ion-icon>
+          </div>
+          <div class="cart-item">
+            <div class="cart-content">
+              <img src="./images/menu-3.png" alt="coffee three" />
+              <h3>Café Lorem</h3>
+              <p>R$8.50 <sub>11.40</sub></p>
+            </div>
+            <ion-icon name="trash-outline"></ion-icon>
+          </div>
+          <button type="button" class="btn">Confirmar</button>
+        </div>
+      </section>
+    </header>
+    <section id="home">
+      <section class="align-content">
+        <div id="home-content">
+          <h1>Code com o melhor cafe da região</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+            placeat adipisci sapiente blanditiis eligendi ex tempore doloribus
+            beatae modi aliquam magnam, est minima, earum repudiandae dolorum
+            dolore et iste praesentium? tempore doloribus beatae modi aliquam
+            magnam, est minima, earum repudiandae.
+          </p>
+          <a class="btn">Pegue o seu agora</a>
+        </div>
+      </section>
+    </section>
+    <section id="about">
+      <h2><span>Sobre</span> nós</h2>
+      <section id="about-content" class="align-content">
+        <div id="about-image">
+          <img src="./images/about-img.jpg" alt="about" />
+        </div>
+        <div id="about-text">
+          <h3>O que faz nosso café especial?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            quidem eius cumque doloribus veritatis fugit minima velit recusandae
+            quae aspernatur rem, nesciunt ducimus nobis! Temporibus, ea quasi!
+            Accusantium, ea iste.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+            accusantium repudiandae, nulla nemo laudantium debitis? Ipsam,
+            magni. Non corrupti.
+          </p>
+          <a class="btn">Saiba mais</a>
+        </div>
+      </section>
+    </section>
+    <section id="menu">
+      <h2>Nosso <span>menu</span></h2>
+      <section id="menu-content" class="align-content">
+        <div class="card-coffee">
+          <img src="./images/menu-1.png" alt="coffee one" />
+          <h3>Café Lorem</h3>
+          <p>R$13.50 <sub>15.99</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+        <div class="card-coffee">
+          <img src="./images/menu-2.png" alt="coffee two" />
+          <h3>Café Lorem</h3>
+          <p>R$11.70 <sub>12.99</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+        <div class="card-coffee">
+          <img src="./images/menu-3.png" alt="coffee three" />
+          <h3>Café Lorem</h3>
+          <p>R$8.50 <sub>11.40</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+        <div class="card-coffee">
+          <img src="./images/menu-4.png" alt="coffee four " />
+          <h3>Café Lorem</h3>
+          <p>R$17.50 <sub>22.99</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+        <div class="card-coffee">
+          <img src="./images/menu-5.png" alt="coffee five" />
+          <h3>Café Lorem</h3>
+          <p>R$6.50 <sub>8.50</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+        <div class="card-coffee">
+          <img src="./images/menu-6.png" alt="coffee six" />
+          <h3>Café Lorem</h3>
+          <p>R$10.00 <sub>12.79</sub></p>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+      </section>
+    </section>
+    <section id="products">
+      <h2>Nossos <span>produtos</span></h2>
+      <section id="product-items" class="align-content">
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-01.jpg" alt="Café 01" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$12.50 <sub>15.40</sub></p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-02.jpg" alt="Café 02" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$10.50 <sub>12.20</sub></p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-03.jpg" alt="Café 03" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$8.45 <sub>10.40</sub></p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-09.jpg" alt="Café 04" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$9.30 <sub>11.90</sub></p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-05.jpg" alt="Café 05" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$14.70 <sub>16.10</sub></p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-06.jpg" alt="Café 06" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$1.56 <sub>13.40</sub></p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <ion-icon name="heart" id="heart"></ion-icon>
+            <ion-icon name="eye" id="eye"></ion-icon>
+          </div>
+          <div class="product-image">
+            <img src="./images/pr-coffee-07.jpg" alt="Café 07" />
+          </div>
+          <div class="product-price">
+            <h3>Café Lorem</h3>
+            <p>R$7.50 <sub>9.90</sub></p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="reviews">
+      <h2>Avaliações</h2>
+      <section id="review-items">
+        <div class="review">
+          <img src="./images/quote-img.png" alt="imagem aspas" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+            officia accusantium neque eius fuga repellendus aspernatur facilis
+            earum sed architecto.
+          </p>
+          <img src="./images//pic-1.png" alt="Pessoa 01" class="person" />
+          <h3>João</h3>
+        </div>
+        <div class="review">
+          <img src="./images/quote-img.png" alt="imagem aspas" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+            officia accusantium neque eius fuga repellendus aspernatur facilis
+            earum sed architecto.
+          </p>
+          <img src="./images//pic-2.png" alt="Pessoa 02" class="person" />
+          <h3>Maria</h3>
+        </div>
+        <div class="review">
+          <img src="./images/quote-img.png" alt="imagem aspas" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+            officia accusantium neque eius fuga repellendus aspernatur facilis
+            earum sed architecto.
+          </p>
+          <img src="./images//pic-3.png" alt="Pessoa 03" class="person" />
+          <h3>Pedro</h3>
+        </div>
+      </section>
+    </section>
+    <section id="contact">
+      <h2><span>Contate</span>-nos</h2>
+      <section id="contact-items" class="align-content">
+        <div id="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14638.181399979328!2d-46.86620180823022!3d-23.47685882455719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03aaf6d062af%3A0x2c22de58cd7f17f1!2sAlphaville%2C%20Santana%20de%20Parna%C3%ADba%20-%20SP%2C%2006542-115!5e0!3m2!1spt-BR!2sbr!4v1736931710191!5m2!1spt-BR!2sbr"
+            width="auto"
+            height="auto"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form>
+          <div class="input-wrapper">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Seu nome completo"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu e-mail"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message">
+Sobre o que você deseja falar?</textarea
+            >
+          </div>
+          <input type="submit" value="Enviar" class="btn" />
+        </form>
+      </section>
+    </section>
+    <footer>
+      <section class="align-content">
+        <div id="social">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-github"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+        <p>
+          Feito com <ion-icon name="heart"></ion-icon> por
+          <a href="https://www.linkedin.com/in/aleanrocha">Alean Rocha</a>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

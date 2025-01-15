@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  /* header */
+
+  #header-content #navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 100vh;
+    background-color: #fafafa;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.3s linear !important;
+    overflow: hidden;
+  }
+  #header-content #navbar.mobile {
+    width: 280px;
+  }
+  #header-content #navbar a {
+    color: var(--dark-color);
+    font-size: 1.8rem;
+  }
+
+  /* icon */
+
+  #header-content #icons #menu-icon {
+    display: block;
+  }
+
+  /* search */
+
+  #search {
+    right: 0;
+    left: 0;
+    padding: 0 4rem;
+    width: 100%;
+  }
+  #search input {
+    width: 100%;
+  }
+
+  /* about */
+
+  #about-content {
+    flex-direction: column;
+  }
+
+  #about-content #about-image,
+  #about-content #about-text {
+    width: 100%;
+  }
+
+  /* contact */
+
+  #contact-items {
+    flex-direction: column;
+  }
+  #contact #contact-items #maps {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  /* home */
+
+  #home {
+    background: none;
+  }
+  #home-content {
+    width: 100%;
+    text-align: center;
+  }
+  #home-content h1 {
+    font-size: 3rem;
+  }
+
+  /* footer */
+
+  footer .align-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
